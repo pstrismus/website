@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --main-color: #ff0000;
+  --black-color: #000000;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2 ease;
+}
+
+/*! base html codes*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+a{
+  color: var(--black-color);
+  text-decoration: none;
+}
+body {
+  background-color: var(--main-color);
+}
+section {
+  padding: 3.5rem 7%;
+}
+html::-webkit-scrollbar{
+  width: 0.8rem;
+  background-color: rgb(243, 243, 243);
+}
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  border-radius: 3rem;
+  background-color: var(--black-color);
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem 100%;
+  font-size: 1.7rem;
+  color: #ccc;
+  background-color: var(--black-color);
+  cursor: pointer;
+}
+.btn:hover {
+opacity: 0.5;
+}
+.Heading{
+  font-size: 4rem;
+  color: #ffffff;
+  border-bottom: 0.1rem solid white;
+  margin-bottom: 3rem;
+}
+.Heading span{
+  color: #000000;
+}
+
+.box-conteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+/* header */
+.header .logo img {
+  height: 10rem;
+}
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+/* header */
+
+
+/* home */
+.home {
+  min-height: 100vh;
+  background: url(../images/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+.home .content h3 {
+  font-size: 6rem;
+  color: white;
+}
+.home .content p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #ccc;
+}
+/* home */
+
+/* menu */
+.menu .box-conteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-conteiner .box {
+  background-color: white;
+  padding: 2rem 3.75rem;
+  border-radius: 5rem;
+  max-width: 35rem;
+  max-width: 35rem;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+}
+.menu .box-conteiner .box img {
+  width: 100%;
+  object-fit: cover;
+}
+.menu .box-conteiner .box .menu-catagory {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.menu .box-conteiner .box h1{
+  font-size: 3rem;
+  padding: 1rem 0;
+
+}
+.menu .btn {
+  margin-top: 25%;
+  font-size: 1.5rem;  
+}
+.menu .box-conteiner .box .box-head .price {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.menu .box-conteiner .box .box-head .price span {
+  font-size: 1.25rem;
+  padding: 0rem 0.75rem;
+  text-decoration: line-through;
+}
+.menu .box-conteiner .box .box-buttom{
+  margin-top: 0%;
+  padding: 0% 15%;
+}
+/* menu */
+
+/* Producs */
+.Products .box-conteiner{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.Products .box-conteiner .box {
+  background-color: #ffffff;
+  background-size: 100%;
+  padding: 2rem 3.75rem;
+  border-radius: 5rem;
+  max-width: 35rem;
+  max-width: 35rem;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;  
+}
+
+.Products .box-conteiner .box .box-head{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  position: relative;
+  z-index: 10;
+  align-self: center;
+}
+
+.Products .box-conteiner .box .box-head .title{
+  font-size: 1.3rem;
+  align-self: center;
+}
+.Products .box-conteiner .box .box-head .name{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  overflow-wrap: anywhere;
+}
+
+
+.Products .box-conteiner .box .image img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+
+/* Producs */
