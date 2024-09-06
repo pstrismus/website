@@ -69,10 +69,6 @@ opacity: 0.5;
   color: #000000;
 }
 
-.box-conteiner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
 
 /* header */
 .header .logo img {
@@ -195,7 +191,7 @@ opacity: 0.5;
 .Products .box-conteiner{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.5rem;
+  gap: 30rem;
 }
 
 .Products .box-conteiner .box {
@@ -203,8 +199,7 @@ opacity: 0.5;
   background-size: 100%;
   padding: 2rem 3.75rem;
   border-radius: 5rem;
-  max-width: 35rem;
-  max-width: 35rem;
+  max-width: 40rem;
   min-height: 40rem;
   display: flex;
   flex-direction: column;
